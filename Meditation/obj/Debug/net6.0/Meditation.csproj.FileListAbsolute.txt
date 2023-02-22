@@ -1,0 +1,15 @@
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\Meditation.exe
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\Meditation.deps.json
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\Meditation.runtimeconfig.json
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\Meditation.dll
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\ref\Meditation.dll
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\bin\Debug\net6.0\Meditation.pdb
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.csproj.AssemblyReference.cache
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.AssemblyInfoInputs.cache
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.AssemblyInfo.cs
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.csproj.CoreCompileInputs.cache
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.dll
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\ref\Meditation.dll
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.pdb
+C:\Users\lengu\Desktop\School\CSE 210 Programming with classes (c#)\Meditation_csharp\Meditation\obj\Debug\net6.0\Meditation.genruntimeconfig.cache
