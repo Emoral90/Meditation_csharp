@@ -16,4 +16,8 @@ Consider an app that provides three different kinds of mindfulness opportunities
 
 ## Total classes
 * 5 total classes?
-    * 
+    * Program
+    * DisplayBase
+    * Breathing
+    * Listening
+    * Reflecting
