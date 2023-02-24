@@ -4,8 +4,7 @@ public class Display
     private string welcome = "";
     private string goodJob = "Good Job!";
     private string youFail = "You Failed! Go home";
-    public string userChoice;
-
+    private char backslash = (char)92;
     // Methods
     public string getGoodJob()
     {
@@ -17,17 +16,81 @@ public class Display
         return youFail;
     }
 
-    private void Spacer()
+    public void Spacer()
     {
         Console.WriteLine("\n");
     }
 
-    public string Menu()
+    public void getASCII()
     {
-        while (userChoice != "quit")
+        while (true)
         {
-            Spacer();
-            Console.WriteLine("");
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("    0         0    ");
+            Console.WriteLine("   0           0   ");
+            Console.WriteLine("    0         0    ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("        0 0        ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
         }
     }
 }
