@@ -1,3 +1,5 @@
+using System;
+
 public class Display
 {
     // Attributes
@@ -27,80 +29,100 @@ public class Display
         Console.WriteLine("\n");
     }
 
+    public void Clear()
+    {
+        Console.Clear();
+    }
+
     public int getTime()
     {
-        Console.WriteLine("Enter the amount of time you would like for this activity to last below");
-        userTime = Console.ReadLine().Int32();
+        Console.WriteLine("Enter the amount of seconds you would like for this activity to last below");
+        string userTimeStr = Console.ReadLine();
+        userTime = Convert.ToInt32(userTimeStr);
         return userTime;
     }
 
-    public void getASCII()
+    public void timer(int seconds)
     {
-        Console.Clear();
+        Console.WriteLine($"The timer will now run for {seconds} seconds");
 
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("         0         ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
-        Console.Clear();
+        int totalTime = seconds * 1000;
+        Thread.Sleep(totalTime);
+        Console.WriteLine($"Thread has slept for {totalTime} milliseconds");
+    }
 
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("        0 0        ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("        0 0        ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
-        Console.Clear();
+    public void getASCII(int seconds)
+    {
+        for (int i=0; i<seconds; i++)
+        {
+            Console.Clear();
 
-        Console.WriteLine("                   ");
-        Console.WriteLine("         0         ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("      0     0      ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("         0         ");
-        Console.WriteLine("                   ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
-        Console.Clear();
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
 
-        Console.WriteLine("        0 0        ");
-        Console.WriteLine("      0     0      ");
-        Console.WriteLine("    0         0    ");
-        Console.WriteLine("   0           0   ");
-        Console.WriteLine("    0         0    ");
-        Console.WriteLine("      0     0      ");
-        Console.WriteLine("        0 0        ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
-        Console.Clear();
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
 
-        Console.WriteLine("                   ");
-        Console.WriteLine("         0         ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("      0     0      ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("         0         ");
-        Console.WriteLine("                   ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
-        Console.Clear();
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
 
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("        0 0        ");
-        Console.WriteLine("       0   0       ");
-        Console.WriteLine("        0 0        ");
-        Console.WriteLine("                   ");
-        Console.WriteLine("                   ");
-                    
-        Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("    0         0    ");
+            Console.WriteLine("   0           0   ");
+            Console.WriteLine("    0         0    ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("        0 0        ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("      0     0      ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("         0         ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+            Console.Clear();
+
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("       0   0       ");
+            Console.WriteLine("        0 0        ");
+            Console.WriteLine("                   ");
+            Console.WriteLine("                   ");
+                        
+            Thread.Sleep(1000); // Pause for 1 second before clearing the console
+        }
+
+        
     }
 }

@@ -16,8 +16,8 @@ class Program : Display
         // Main menu
         while (userChoice != "quit")
         {
-            p.Spacer(); // Spacer() method inheirited from Display class
-            p.getWelcome();
+            p.Clear();
+            p.getWelcome();// getWelcome method inheirited from Display class
             Console.WriteLine("Please Enter a number to choose an activity\nOr type 'quit' to exit the program");
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("1) Breathing\n2) Listening\n3) Reflecting\n4) ASCII art\nQuit");
@@ -25,7 +25,17 @@ class Program : Display
             
             if (userChoice == "1")
             {
+                p.Clear();
                 b.getBrWelcome();
+                p.Spacer();
+                b.getBrInstr();
+                p.Spacer();
+
+                int userTime = p.getTime();
+                // p.timer(userTime);
+                p.getASCII(userTime);
+
+                p.Clear();
             }           
             else if (userChoice == "2")
             {
@@ -37,7 +47,7 @@ class Program : Display
             }
             else if (userChoice == "4")
             {
-                p.getASCII();
+                
             }
 
         }
