@@ -7,8 +7,9 @@ class Program : Display
     static string userChoice;
     static void Main()
     {
-        // Constructor 
+        // Constructors
         Program p = new Program();
+        Breathing b = new Breathing();
 
         // p.getASCII();
 
@@ -16,16 +17,29 @@ class Program : Display
         while (userChoice != "quit")
         {
             p.Spacer(); // Spacer() method inheirited from Display class
-            Console.WriteLine("Hello and welcome to today's activity");
+            p.getWelcome();
             Console.WriteLine("Please Enter a number to choose an activity\nOr type 'quit' to exit the program");
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("1) Breathing\n2) Listening\n3) Reflecting\n4) ASCII art\nQuit");
             userChoice = Console.ReadLine();
+            
+            if (userChoice == "1")
+            {
+                b.getBrWelcome();
+            }           
+            else if (userChoice == "2")
+            {
 
-            if (userChoice == "4")
+            }
+            else if (userChoice == "3")
+            {
+
+            }
+            else if (userChoice == "4")
             {
                 p.getASCII();
             }
+
         }
     }
 }
