@@ -20,7 +20,7 @@ class Program : Display
             p.getWelcome();// getWelcome method inheirited from Display class
             Console.WriteLine("Please Enter a number to choose an activity\nOr type 'quit' to exit the program");
             Console.WriteLine("-------------------------------------------");
-            Console.WriteLine("1) Breathing\n2) Listening\n3) Reflecting\nQuit");
+            Console.WriteLine("1) Breathing\n2) Listing\n3) Reflecting\nQuit");
             userChoice = Console.ReadLine();
             
             if (userChoice == "1")

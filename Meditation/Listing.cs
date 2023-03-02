@@ -1,7 +1,5 @@
-public class Listening
+public class Listing
 {
-    // Inheiritance
-
     // Attributes
 
     // Methods
