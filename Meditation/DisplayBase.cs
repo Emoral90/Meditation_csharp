@@ -3,7 +3,7 @@ using System;
 public class Display
 {
     // Attributes
-    private string welcome = "==================================================\nWelcome! It's great to have you here. I know starting something new can be daunting, but don't worry, everything will be okay. You've taken the first step and that's already a huge accomplishment. We're here to support you and help you every step of the way. So take a deep breath, relax, and let's get started!\n==================================================";
+    private string welcome = "====================================================================================================\nWelcome! It's great to have you here. I know starting something new can be daunting, but don't worry, everything will be okay. You've taken the first step and that's already a huge accomplishment. We're here to support you and help you every step of the way. So take a deep breath, relax, and let's get started!\n====================================================================================================";
     private string goodJob = "Good Job!";
     private string youFail = "You Failed! Go home";
     private char backslash = (char)92;
@@ -19,9 +19,9 @@ public class Display
         return youFail;
     }
 
-    public string getWelcome()
+    public void getWelcome()
     {
-        return welcome;
+        Console.WriteLine(welcome);
     }
 
     public void Spacer()
@@ -36,13 +36,37 @@ public class Display
 
     public int getTime()
     {
-        Console.WriteLine("Enter the amount of seconds you would like for this activity to last below");
-        string userTimeStr = Console.ReadLine();
-        userTime = Convert.ToInt32(userTimeStr);
+        Console.WriteLine("Choose the number option of time you would like for this activity to last below");
+        while (true)
+        {
+            Console.WriteLine("1) 30 seconds");
+            Console.WriteLine("2) 1 minute");
+            Console.WriteLine("3) 2 minutes");
+            string userTimeStr = Console.ReadLine();
+            userTime = Convert.ToInt32(userTimeStr);
+
+            if (userTime == 1)
+            {
+                getASCII(5);
+                break;
+            }
+            else if (userTime == 2)
+            {
+                getASCII(10);
+                break;
+            }
+            else if (userTime == 3)
+            {
+                getASCII(20);
+                break;
+            }
+            
+        }
+        
         return userTime;
     }
 
-    public void timer(int seconds)
+    private void timer(int seconds)
     {
         Console.WriteLine($"The timer will now run for {seconds} seconds");
 
