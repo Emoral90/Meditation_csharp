@@ -6,7 +6,7 @@ public class Display
     private string welcome = "====================================================================================================\nWelcome! It's great to have you here. I know starting something new can be daunting, but don't worry, everything will be okay. You've taken the first step and that's already a huge accomplishment. We're here to support you and help you every step of the way. So take a deep breath, relax, and let's get started!\n====================================================================================================";
     private string goodJob = "Good Job!";
     private string youFail = "You Failed! Go home";
-    private char backslash = (char)92;
+    // private char backslash = (char)92;
     private int userTime;
     // Methods
     public string getGoodJob()

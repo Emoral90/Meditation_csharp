@@ -10,6 +10,7 @@ class Program : Display
         // Constructors
         Program p = new Program();
         Breathing b = new Breathing();
+        Listing l = new Listing();
 
         // p.getASCII();
 
@@ -32,13 +33,19 @@ class Program : Display
                 p.Spacer();
 
                 int userTime = p.getTime();
-                // p.timer(userTime);
                 p.getASCII(userTime);
 
                 p.Clear();
             }           
             else if (userChoice == "2")
             {
+                // p.Clear();
+                l.getLstWelcome();
+                p.Spacer();
+                l.getLstInstr();
+                p.Spacer();
+                
+                l.initPromptList();
 
             }
             else if (userChoice == "3")
