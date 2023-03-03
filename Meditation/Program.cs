@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Threading;
+using System.Collections.Generic;
 
 // Inheirit the Display class. Creating a Program child class
 class Program : Display
 {
+    // Attributes
     static string userChoice;
+    static List<string> thePromptList = new List<string>();
+    static List<string> theQuestionList = new List<string>();
     static void Main()
     {
         // Constructors
         Program p = new Program();
         Breathing b = new Breathing();
         Listing l = new Listing();
-
-        // p.getASCII();
+        Reflecting r = new Reflecting();
 
         // Main menu
         while (userChoice != "quit")
@@ -24,7 +27,7 @@ class Program : Display
             Console.WriteLine("1) Breathing\n2) Listing\n3) Reflecting\nQuit");
             userChoice = Console.ReadLine();
             
-            if (userChoice == "1")
+            if (userChoice == "1") // Breathing
             {
                 p.Clear();
                 b.getBrWelcome();
@@ -37,20 +40,40 @@ class Program : Display
 
                 p.Clear();
             }           
-            else if (userChoice == "2")
+            else if (userChoice == "2") // Listing
             {
-                // p.Clear();
+                p.Clear();
                 l.getLstWelcome();
                 p.Spacer();
                 l.getLstInstr();
                 p.Spacer();
                 
-                l.initPromptList();
+                thePromptList = l.initLstPromptList();
+                l.chooseRandPrompt(thePromptList);
+                p.Spacer();
+                l.saveResponses();
+
+                p.Clear();
 
             }
-            else if (userChoice == "3")
+            else if (userChoice == "3") // Reflecting
             {
+                p.Clear();
+                r.getRfWelcome();
+                p.Spacer();
+                r.getRfInstructions();
+                p.Spacer();
 
+                thePromptList = r.initRfPromptList();
+                r.chooseRandPrompt(thePromptList);
+                p.Spacer();
+                theQuestionList = r.initRfQuestionList();
+                r.choose3RandQuestions(theQuestionList);
+
+                p.timer(10);
+
+                p.Clear();
+                
             }
         }
     }

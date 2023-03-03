@@ -66,18 +66,30 @@ public class Display
         return userTime;
     }
 
-    private void timer(int seconds)
+    public void timer(int seconds)
     {
-        Console.WriteLine($"The timer will now run for {seconds} seconds");
+        // Console.WriteLine($"The timer will now run for {seconds} seconds");
 
         int totalTime = seconds * 1000;
         Thread.Sleep(totalTime);
-        Console.WriteLine($"Thread has slept for {totalTime} milliseconds");
+
+        // ConsoleKeyInfo key = Console.ReadKey();
+        // if (key.Key == ConsoleKey.Enter)
+        // {
+        //     continue;
+        // }
+
+        // Console.WriteLine($"Thread has slept for {totalTime} milliseconds");
     }
 
-    public void getASCII(int seconds)
+    public void pressEnter()
     {
-        for (int i=0; i<seconds; i++)
+        Console.ReadKey();
+    }
+
+    public void getASCII(int loops)
+    {
+        for (int i=0; i<loops; i++)
         {
             Console.Clear();
 
