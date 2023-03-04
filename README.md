@@ -66,7 +66,7 @@ Consider an app that provides three different kinds of mindfulness opportunities
 * The activity should conclude with the standard finishing message for all activities.
 
 ### Total classes
-* 5 total classes?
+* 5 total classes
     * Program
     * DisplayBase
     * Breathing
