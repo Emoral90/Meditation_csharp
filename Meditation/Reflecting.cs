@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public class Reflecting
 {
     // Attributes
-    private string reflectingWelcome = "Welcome to this guided reflection activity! Reflection is a powerful tool for self-awareness and personal growth. By taking the time to reflect, we can gain insights into our thoughts, feelings, and behaviors, and make positive changes in our lives. During this activity, we'll explore a variety of prompts and questions designed to help you delve deeper into your inner world. So find a quiet space, get comfortable, and let's begin this journey of self-discovery together.";
+    private string reflectingWelcome = "Welcome to this guided reflection activity! Daily reflection can offer several benefits, including increased self-awareness, improved decision-making, greater focus and productivity, better problem-solving skills, and reduced stress and improved mental health. By reflecting on our daily experiences, we can become more aware of our thoughts, emotions, and behaviors, and make more informed decisions in the future.";
     private string reflectingInstructions = "You will be shown one randomly chosen prompt, then you will be given a few seconds reflect on that prompt with supplemental questions";
     private string[] prompts = {"Think of a time when you stood up for someone else", 
     "Think of a time when you did something really difficult", 

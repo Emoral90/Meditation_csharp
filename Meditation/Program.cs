@@ -70,7 +70,7 @@ class Program : Display
                 theQuestionList = r.initRfQuestionList();
                 r.choose3RandQuestions(theQuestionList);
 
-                p.timer(10);
+                p.timer(20);
 
                 p.Clear();
                 
